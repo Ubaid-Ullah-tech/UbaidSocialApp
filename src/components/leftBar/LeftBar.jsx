@@ -14,6 +14,7 @@ import Curses from "../images/12.png";
 import Fund from "../images/13.png";
 import { AuthContext } from '../context/authContext';
 import { useContext } from "react";
+import ubaid1 from '../images/ubaid1.jpg'
 
 const LeftBar = () => {
 
@@ -24,10 +25,11 @@ const LeftBar = () => {
       <div className="container">
         <div className="menu">
           <div className="user">
-            <img
+            <img src={ubaid1} alt="Error" />
+            {/* <img
               src={currentUser.profilePic}
               alt=""
-            />
+            /> */}
             <span>{currentUser.name}</span>
           </div>
           <div className="item">

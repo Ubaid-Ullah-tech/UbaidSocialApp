@@ -9,7 +9,7 @@ import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import { Link } from "react-router-dom";
 import { useContext } from "react";
-
+import ubaid1 from '../images/ubaid1.jpg'
 import { DarkModeContext } from "../context/darkModeContext.js";
 import { AuthContext } from "../context/authContext.js";
 
@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="left">
         <Link to="/" style={{ textDecoration: "none" }}>
-          <span>lamasocial</span>
+          <span>UbaidsocialApp</span>
         </Link>
         <HomeOutlinedIcon />
         {darkMode ? (
@@ -41,8 +41,9 @@ const Navbar = () => {
         <NotificationsOutlinedIcon />
         <div className="user">
           <img
-            src={currentUser.profilePic}
-            alt=""
+          src={ubaid1} alt="Error"
+            // src={currentUser.profilePic}
+            // alt=""
           />
           <span>{currentUser.name}</span>
         </div>
